@@ -1,0 +1,18 @@
+nav {
+	& a {
+		color: black;
+
+		&[aria-current='true'] {
+			color: red;
+			font-weight: bold;
+		}
+	}
+}
+
+#content {
+	transition: opacity 0.5s;
+
+	&.htmx-swapping {
+		opacity: 0;
+	}
+}
